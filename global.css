@@ -1,0 +1,16 @@
+.overflow{
+    height: 50%;
+    overflow: hidden;
+}
+.custom-card-img {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    height: 200px; /* Ajusta la altura según tus preferencias */
+    object-fit: cover; /* Asegura que la imagen se ajuste al tamaño sin deformarla */
+  }
+.overflow .card-img-top {
+    transform: scale(1);
+    transition: all 0.2s ease-out;
+}
+.overflow .card-img-top:hover{
+    transform: scale(1.8);
+}
