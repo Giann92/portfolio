@@ -63,7 +63,7 @@ export const projects = [
         title:'PI Dog',
         description: `App de dogs relizada en Node.js : autenticación, búsquedas, filtrados combinados, ordenamientos, etc. Front: React, Redux, Back: JavaScript, Express Base de datos: PostgreSQL y Sequelize. `,
         image:'dog-image.webp',
-        link:'https://pi-qzsviuv28-giann92.vercel.app/',
+        link:'https://pi-dog-self.vercel.app/dogs',
     },
     {
         title:'PF front-end',
