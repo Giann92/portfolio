@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <Link className='navbar-brand' to="/">Mi Sitio</Link>
+        
         
         {/* Botón de hamburguesa (toggler) para dispositivos móviles */}
         <button className="navbarr-toggler" type="button" onClick={toggleMenu}>
@@ -24,10 +24,10 @@ const Navbar = () => {
         <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className='nav-link' to="/">Inicio</Link>
+              <Link className='nav-link' href="/">Inicio</Link>
             </li>
             <li className="nav-item">
-              <Link className='nav-link' to="/portfolio">Portfolio</Link>
+              <Link className='nav-link' href="/portfolio">Portfolio</Link>
             </li>
           </ul>
         </div>
