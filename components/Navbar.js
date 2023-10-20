@@ -16,7 +16,7 @@ const Navbar = () => {
         <Link className='navbar-brand' to="/">Mi Sitio</Link>
         
         {/* Botón de hamburguesa (toggler) para dispositivos móviles */}
-        <button className="navbar-toggler" type="button" onClick={toggleMenu}>
+        <button className="navbarr-toggler" type="button" onClick={toggleMenu}>
           <span className="navbar-toggler-icon"></span>
         </button>
 
