@@ -1,26 +1,22 @@
 import Link from "next/link";
-import { useState } from "react"; // Importa useState para controlar el estado del menú
+import { useState } from "react";
 
 const Navbar = () => {
-  // Agrega un estado para controlar si el menú está abierto o cerrado
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Función para alternar entre menú abierto y cerrado
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Clase CSS condicional para el botón
+  const buttonClass = `navbar-toggler btn-${menuOpen ? 'dark' : 'light'} d-lg-none`;
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        
-        
-        {/* Botón de hamburguesa (toggler) para dispositivos móviles */}
-        <button className="navbarr-toggler" type="button" onClick={toggleMenu}>
+        <button className={buttonClass} type="button" onClick={toggleMenu}>
           <span className="navbar-toggler-icon"></span>
         </button>
-
-        {/* Menú de navegación */}
         <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
